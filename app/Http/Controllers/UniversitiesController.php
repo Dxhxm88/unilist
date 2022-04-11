@@ -14,7 +14,7 @@ class UniversitiesController extends Controller
      */
     public function index()
     {
-        //
+        return Universities::all();
     }
 
     /**
@@ -34,9 +34,9 @@ class UniversitiesController extends Controller
      * @param  \App\Models\Universities  $universities
      * @return \Illuminate\Http\Response
      */
-    public function show(Universities $universities)
+    public function show($universities)
     {
-        //
+        return Universities::find($universities);
     }
 
     /**
