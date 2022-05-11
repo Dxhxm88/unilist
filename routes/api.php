@@ -23,5 +23,6 @@ Route::get('/test', function () {
     return response()->json(['test'=> 'gg'], 200);
 });
 
+// resource for api
 Route::resource('universities', UniversitiesController::class);
 
